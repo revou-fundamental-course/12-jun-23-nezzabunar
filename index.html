@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/revou.css">
+</head>
+
+<body>
+    <header>
+        <h2>Konversi Suhu</h2>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="card">
+                <label for="celcius">Celcius °C</label>
+                <input class="form-input" autofocus type="number" name="nilai" id="nilai" placeholder="Masukan Nilai"></input>
+            </div>
+            <p class="notif" id="notif"></p>
+            <div class="row">
+                <button class="button btn-konversi" id="konversi" onclick="konversi()">Konversi</button>
+                <button class="button btn-reset" id="reset" onclick="reset()">Reset</button>
+                <button class="button btn-reverse" id="reverse" onclick="reverse()">Reverse</button>
+            </div>
+
+            <div class="card">
+                <label for="fahrenheit">Fahrenheit °F</label>
+                <input class="form-input" type="number" name="fahrenheit" id="fahrenheit" placeholder="Hasil Konversi" disabled></input>
+                <label for="">Kalkulasi</label>
+                <textarea class="form-input" type="number" name="hasil" id="hasil" cols="30" rows="5" placeholder="Hasil Konversi"></textarea>
+
+            </div>
+        </section>
+
+
+    </main>
+</body>
+<script src="js/script.js"></script>
+
+</html>
