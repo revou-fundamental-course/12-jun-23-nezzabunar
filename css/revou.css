@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 0.5rem;
+    margin: 2rem;
+    border: 1px #333;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 0.25rem;
+    box-shadow: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.notif {
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    border-color: #0077ff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 89, 255, 0.6);
+}
+
+.button {
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.btn-konversi {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.btn-reverse {
+    background-color: #ff0037;
+    color: #fff;
+    border: 1px solid #ff0037;
+}
+
+.btn-konversi:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    /* transition: 0.7s; */
+}
+
+.btn-reverse:hover {
+    color: #fff;
+    background-color: #d9002f;
+    border-color: #d9002f;
+}
+
+.btn-reset {
+    background-color: gold;
+    color: #000;
+    border: 1px solid gold;
+}
+
+.btn-reset:hover {
+    color: #000;
+    background-color: #d9cb00;
+    border-color: #d9cb00;
+}
+
