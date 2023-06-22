@@ -19,7 +19,9 @@ function konversiKeCelcius() {
 
         result = nilai.value * 9 / 5 + 32;
         label.value = result.toFixed(2);
-        hasil.value = `Nilai ${nilai.value}°C = ${result.toFixed(2)}°F`;
+        hasil.value = `Nilai ${nilai.value}°C * (9/5) + 32 = ${result.toFixed(2)}°F`;
+
+        // hasil.value = `Nilai ${nilai.value}°C = ${result.toFixed(2)}°F`;
     }
 }
 
@@ -36,7 +38,7 @@ function konversiKeFahrenheit() {
 
         result = (nilai.value - 32) * 5 / 9;
         label.value = result.toFixed(2);
-        hasil.value = `Nilai ${nilai.value}°F = ${result.toFixed(2)}°C`;
+        hasil.value = `Nilai ${nilai.value}°F - 32 * (5/9) = ${result.toFixed(2)}°C`;
     }
 }
 
