@@ -16,19 +16,19 @@
     <main>
         <section class="container">
             <div class="card">
-                <label for="celcius">Celcius °C</label>
-                <input class="form-input" autofocus type="number" name="nilai" id="nilai" placeholder="Masukan Nilai"></input>
+                <label for="celcius" id="labelCelcius">Celcius °C</label>
+                <input class="form-input" autofocus type="number" onkeydown="return event.keyCode !== 69" name="nilai" id="nilai" placeholder="Masukan Nilai"></input>
             </div>
             <p class="notif" id="notif"></p>
             <div class="row">
-                <button class="button btn-konversi" id="konversi" onclick="konversi()">Konversi</button>
+                <button class="button btn-konversi" name="konversiCelcius" id="konversiCelcius" onclick="konversiKeCelcius()">Konversi</button>
                 <button class="button btn-reset" id="reset" onclick="reset()">Reset</button>
                 <button class="button btn-reverse" id="reverse" onclick="reverse()">Reverse</button>
             </div>
 
             <div class="card">
-                <label for="fahrenheit">Fahrenheit °F</label>
-                <input class="form-input" type="number" name="fahrenheit" id="fahrenheit" placeholder="Hasil Konversi" disabled></input>
+                <label for="label" id="labelFahrenheit">Fahrenheit °F</label>
+                <input class="form-input" type="number" name="label" id="label" placeholder="Hasil Konversi" disabled></input>
                 <label for="">Kalkulasi</label>
                 <textarea class="form-input" type="number" name="hasil" id="hasil" cols="30" rows="5" placeholder="Hasil Konversi"></textarea>
 
